@@ -1,0 +1,157 @@
+body{
+  @apply dark:bg-dark-10
+}
+
+h1 {
+  font-size: 2em; /* Adjust font size as needed */
+  margin: 0.67em 0; /* Adjust margins as needed */
+  font-weight: bold; /* Set font weight to bold */
+}
+
+h2 {
+  font-size: 1.5em; /* Adjust font size as needed */
+  margin: 0.83em 0; /* Adjust margins as needed */
+  font-weight: bold; /* Set font weight to bold */
+}
+
+h3 {
+  font-size: 1.17em; /* Adjust font size as needed */
+  margin: 1em 0; /* Adjust margins as needed */
+  font-weight: bold; /* Set font weight to bold */
+}
+
+h4 {
+  font-size: 1em; /* Adjust font size as needed */
+  margin: 1.33em 0; /* Adjust margins as needed */
+  font-weight: bold; /* Set font weight to bold */
+}
+
+h5 {
+  font-size: 0.83em; /* Adjust font size as needed */
+  margin: 1.67em 0; /* Adjust margins as needed */
+  font-weight: bold; /* Set font weight to bold */
+}
+
+h6 {
+  font-size: 0.67em; /* Adjust font size as needed */
+  margin: 2.33em 0; /* Adjust margins as needed */
+  font-weight: bold; /* Set font weight to bold */
+}
+
+/*--------------Editor-----------------------*/
+
+
+/* styles.css */
+
+
+.form-input{
+  @apply dark:bg-dark-20 border border-dark-50 rounded-md 
+}
+
+
+
+
+
+
+.hljs-string{
+  color: rgb(0, 173, 29) !important;
+}
+
+.tiptap p.is-empty::before {
+  color: #737373;
+  content: attr(data-placeholder);
+  float: left;
+  height: 0;
+  pointer-events: none;
+}
+
+.block-quote{
+    @apply text-center p-1 text-black dark:text-white 
+}
+
+
+/* .copy-button:hover {
+  background: #343434;
+}
+
+.copy-button:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.2);
+} */
+
+/*-------------------Scrollbar---------------------------*/
+
+.cutom-scrollbar{
+  scrollbar-width: 8px;
+  @apply dark:bg-dark-50 bg-dark-90
+}
+
+.custom-scrollbar::-webkit-scrollbar {
+  width: 8px; /* Width of the scrollbar */
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  @apply dark:bg-dark-40 bg-dark-90 rounded-md/* Background of the scrollbar track */
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  @apply dark:bg-dark-60 bg-dark-80 rounded-sm
+
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  @apply dark:bg-dark-50 bg-dark-70 rounded-sm
+/* Background of the scrollbar thumb on hover */
+}
+
+
+
+/*-----------------------------------*/
+button span {
+  position: absolute;
+  width: 24px; /* Adjust this based on your icon size */
+  height: 24px; /* Adjust this based on your icon size */
+}
+
+.nav-link{
+  @apply text-dark-50 text-sm hover:text-dark-30 dark:hover:text-dark-90 hover:font-medium
+}
+nav .active{
+  @apply dark:text-white text-dark-10 text-sm font-semibold
+}
+.fill{
+  min-height: 100vh;
+}
+.avatar{
+  width: 10rem;
+  height: 10rem ;
+  max-width: 10rem;
+  max-height: 10rem ;
+  border-radius: 100%;
+  object-fit: cover;
+  aspect-ratio: 1/1;
+
+}
+
+.ProseMirror {
+  border: none;
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+.ProseMirror:focus {
+  outline: none;
+}
+
+.avatar-sm{
+  width: 2rem;
+  height: 2rem ;
+  max-width: 2rem;
+  max-height: 2rem ;
+  border-radius: 100%;
+  object-fit: cover;
+  aspect-ratio: 1/1;
+
+}
